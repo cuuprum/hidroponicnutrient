@@ -44,7 +44,10 @@
                         print_r(data);
                         $jsonContents = file_get_contents("/assets/nutrisi.json");
                         
-                        var_dump($jsonContents);
+                        $array = json_decode($jsonContents, true);
+
+                        var_dump($array);
+                        echo "Warerererer"
 
                         $i = 1;
                         if(count($data) > 0){
