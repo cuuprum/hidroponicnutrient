@@ -35,27 +35,28 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@mdo</td>
-                    </tr>
+                    <?php
+                        require_once 'DbOperation.php';
+                        
+                        $db = new DbOperation();
+                        $data = $db->nutritions();
+                        
+                        $i = 1;
+                        if(count($data) > 0){
+                            foreach($data as $nutrition){
+                    ?>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><?=$nutrition['name']?></td>
+                                    <td><?=$nutrition['ph']?></td>
+                                    <td><?=$nutrition['ppm']?></td>
+                                    <td><?=$nutrition['jenis']?></td>
+                                    <td style="display:none"><?=$nutrition['id']?></td>
+                                </tr> 
+                    <?php
+                            }
+                        }
+                    ?>                    
                 </tbody>
             </table>
         </div>
