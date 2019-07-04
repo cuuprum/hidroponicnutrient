@@ -18,7 +18,7 @@
 
     <main role="main" class="container">
     <div class="jumbotron col-md-12">
-        <h2>xxxxxxxxxxwwwwwwwwwwwww Plants Nutrient Table</h2>
+        <h2>Plants Nutrient Table</h2>
         <p class="lead">Make sure your plant on right treatment. Check the table for best composition.</p>
         <a href="" class="btn btn-success"> Contribute Add Data</a>
     </div>
@@ -36,39 +36,33 @@
                 </thead>
                 <tbody>
                     <?php
-                        require_once 'DbOperation.php';
+                        require_once 'model/DbOperation.php';
                         
                         $db = new DbOperation();
                         $data = $db->nutritions();
-
-                        //print_r(data);
-                        //$jsonContents = file_get_contents("/assets/nutrisi.json");
-                        
-                       // $array = json_decode($jsonContents, true);
-
-                        //var_dump($array);
-                        echo "Warerererer"
 
                         $i = 1;
                         if(count($data) > 0){
                             foreach($data as $nutrition){
                     ?>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td><?=$nutrition['name']?></td>
+                                    <th scope="row"><?=$i?></th>
+                                    <td><?=$nutrition['nama']?></td>
                                     <td><?=$nutrition['ph']?></td>
                                     <td><?=$nutrition['ppm']?></td>
                                     <td><?=$nutrition['jenis']?></td>
-                                    <td style="display:none"><?=//$nutrition['id']?></td>
+                                    <td style="display:none"><?=$nutrition['id']?></td>
                                 </tr> 
                     <?php
+                                $i++;
                             }
                         }
+                        else{
                     ?>                    
                 </tbody>
             </table>
                     <?php
-                        else{
+                        
                             echo"NO DATA";
                         }
                     ?>

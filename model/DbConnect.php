@@ -1,6 +1,6 @@
 <?php
     // Class DbConnect
-    clss DbConnect{
+    class DbConnect{
         private $con;
 
         function __construct(){}
@@ -15,7 +15,7 @@
             $db = "dbhidroponicnutrient";
 
             try{
-                $this->con = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass); // new PDO("sqlsrv:server = " . DB_SERVER . "; Database = " . DB_NAME, DB_USERNAME, DB_PASSWORD);
+                $this->con =  new PDO("sqlsrv:server = " . DB_SERVER . "; Database = " . DB_NAME, DB_USERNAME, DB_PASSWORD);
                 $this->con->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
             }catch(Exception $e){
                 echo "Error DB Connection : " . $e;
