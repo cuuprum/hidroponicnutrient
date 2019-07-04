@@ -35,7 +35,36 @@
                     </tr>
                 </thead>
                 <tbody>
-                                     
+                    <?php
+                    //     require_once 'DbOperation.php';
+                        
+                    //     $db = new DbOperation();
+                    //     $data = $db->nutritions();
+
+                    //     //print_r(data);
+                    //     //$jsonContents = file_get_contents("/assets/nutrisi.json");
+                        
+                    //    // $array = json_decode($jsonContents, true);
+
+                    //     //var_dump($array);
+                    //     echo "Warerererer"
+
+                    //     $i = 1;
+                    //     if(count($data) > 0){
+                    //         foreach($data as $nutrition){
+                    ?>
+                                <!-- <tr>
+                                    <th scope="row">1</th>
+                                    <td><?=//$nutrition['name']?></td>
+                                    <td><?=//$nutrition['ph']?></td>
+                                    <td><?=//$nutrition['ppm']?></td>
+                                    <td><?=//$nutrition['jenis']?></td>
+                                    <td style="display:none"><?=//$nutrition['id']?></td>
+                                </tr>  -->
+                    <?php
+                        //     }
+                        // }
+                    ?>                    
                 </tbody>
             </table>
         </div>
