@@ -23,7 +23,7 @@ class DbOperation
             echo "Failed DbOperation : " . $e;
         }
 
-        return print_r($result);
+        return $result;
     }
 }
 ?>

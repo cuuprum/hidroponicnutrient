@@ -40,7 +40,12 @@
                         
                         $db = new DbOperation();
                         $data = $db->nutritions();
+
+                        print_r(data);
+                        $jsonContents = file_get_contents("/assets/nutrisi.json");
                         
+                        var_dump($jsonContents);
+
                         $i = 1;
                         if(count($data) > 0){
                             foreach($data as $nutrition){
