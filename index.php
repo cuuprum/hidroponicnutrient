@@ -18,7 +18,7 @@
 
     <main role="main" class="container">
     <div class="jumbotron col-md-12">
-        <h2>Hidroponic Plants Nutrient Table</h2>
+        <h2>wwwwwwwwwwwww Plants Nutrient Table</h2>
         <p class="lead">Make sure your plant on right treatment. Check the table for best composition.</p>
         <a href="" class="btn btn-success"> Contribute Add Data</a>
     </div>
