@@ -4,7 +4,8 @@ CREATE TABLE [dbo].[tb_nutrisi](
         , nama VARCHAR(50)
         , ph VARCHAR(10)
         , ppm VARCHAR(10)
-        , jenis VARCHAR(20) 
+        , jenis VARCHAR(20)
+        , addedtimestamp DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 /* INSERT QUERY */

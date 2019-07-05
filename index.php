@@ -23,15 +23,16 @@
         <a href="contribute.php" class="btn btn-success"> Contribute Add Data</a>
     </div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <table class="table table-striped">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Plant Name</th>
-                    <th scope="col">PH Range</th>
-                    <th scope="col">PPM Range</th>
-                    <th scope="col">Plant Type</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Plant Name</th>
+                        <th scope="col">PH Range</th>
+                        <th scope="col">PPM Range</th>
+                        <th scope="col">Plant Type</th>
+                        <th scope="col">Added Time Stamp</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -51,6 +52,7 @@
                                     <td><?=$nutrition['ph']?></td>
                                     <td><?=$nutrition['ppm']?></td>
                                     <td><?=$nutrition['jenis']?></td>
+                                    <td><?=$nutrition['addedtimestamp']?></td>
                                     <td style="display:none"><?=$nutrition['id']?></td>
                                 </tr> 
                     <?php
@@ -71,6 +73,6 @@
     
     </main>
 <?php
-    include_once 'templates/footer.php';
+    include 'templates/footer.php';
 ?>
 

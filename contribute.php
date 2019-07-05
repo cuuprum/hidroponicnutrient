@@ -102,7 +102,17 @@
     }
     ?>
 </div>
+    <!-- Footer -->
+        <footer class="footer mt-5 py-3 navbar-fixed-bottom">
+            <div class="container">
+                <div class="footer-copyright text-center py-3"> 2019
+                <a href="https://github.com/cuuprum"> Muhammad Faishal</a>
+                Untuk Dicoding <a href="https://www.dicoding.com/academies/83"> Azure Class</a> Submission.
+                </div>
+            </div>
+        </footer>
+    <!-- Footer -->
     <?php
 
     include_once 'templates/footer.php';
-?>
+    ?>
