@@ -9,8 +9,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Contribute</a>
+                    <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="contribute.php">Contribute</a>
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
     <div class="jumbotron col-md-12">
         <h2>Plants Nutrient Table</h2>
         <p class="lead">Make sure your plant on right treatment. Check the table for best composition.</p>
-        <a href="" class="btn btn-success"> Contribute Add Data</a>
+        <a href="contribute.php" class="btn btn-success"> Contribute Add Data</a>
     </div>
     <div class="row">
         <div class="col-md-8">
